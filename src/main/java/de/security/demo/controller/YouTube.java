@@ -1,9 +1,11 @@
-package de.security.demo;
+package de.security.demo.controller;
 
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.service.annotation.GetExchange;
 
-interface YouTube {
+import de.security.demo.dto.SearchListResponse;
+
+public interface YouTube {
 
   @GetExchange("/search?part=snippet&type=video")
   SearchListResponse channelVideos( //

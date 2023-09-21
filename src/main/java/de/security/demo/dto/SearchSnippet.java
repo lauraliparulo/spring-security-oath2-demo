@@ -1,8 +1,8 @@
-package de.security.demo;
+package de.security.demo.dto;
 
 import java.util.Map;
 
-record SearchSnippet(String publishedAt, String channelId, String title, String description,
+public record SearchSnippet(String publishedAt, String channelId, String title, String description,
   Map<String, SearchThumbnail> thumbnails, String channelTitle) {
 
   String shortDescription() {
